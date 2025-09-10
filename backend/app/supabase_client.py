@@ -2,9 +2,9 @@ from supabase import create_client, Client
 import os
 
 # Use your service_role key for server-side inserts (authenticated with RLS)
-SUPABASE_URL =os.getenv ("https://dycqfwvouusuktsfvjun.supabase.co")
+SUPABASE_URL = "https://dycqfwvouusuktsfvjun.supabase.co"
 
-SUPABASE_SERVICE_KEY = os.getenv("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5Y3Fmd3ZvdXVzdWt0c2Z2anVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NDQ2NDY2MiwiZXhwIjoyMDcwMDQwNjYyfQ.e0g_42t4XXygLCg3_MJIlOm13JWaOIKEtGfsVle-cPk")
+SUPABASE_SERVICE_KEY ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5Y3Fmd3ZvdXVzdWt0c2Z2anVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NDQ2NDY2MiwiZXhwIjoyMDcwMDQwNjYyfQ.e0g_42t4XXygLCg3_MJIlOm13JWaOIKEtGfsVle-cPk"
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
